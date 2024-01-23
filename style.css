@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Inter:wght@600&display=swap');
+
+
+:root {
+    --gray-6: #F8F9FA;
+    --gray-5: #F1F3F5;
+    --gray-4: #DEE2E6;
+    --gray-3: #868E96;
+    --gray-2: #495057;
+    --gray-1: #343A40;
+    --brand-1: #364FC7;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-family-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #FFF;
+}
+
+header {
+    padding: clamp(1.5rem, 1.136rem + 1.794vw, 2.75rem);
+    font-family: var(--font-family-inter);
+    font-size: clamp(0.8rem, 0.742rem + 0.287vw, 1rem);
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+h3 {
+    font-family: var(--font-family-inter);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list {
+    list-style: none;
+    max-width: 60svw;
+    width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--gray-5);
+    border-radius: 0.5rem;
+}
+
+input {
+    width: 60svw;
+    max-width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--gray-3);
+    border-radius: 0.25rem;
+    height: 3.25rem;
+    background-color: var(--gray-6);
+    color: var(--gray-3);
+    font-family: var(--font-family-ibm-plex-sans);
+    min-width: 250px;
+    border: 1px solid transparent;
+}
+
+button {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    font-family: var(--font-family-ibm-plex-sans);
+    width: clamp(2rem, 1.563rem + 2.152vw, 3.5rem);
+    height: clamp(1.2rem, 0.967rem + 1.148vw, 2rem);
+    background-color: var(--brand-1);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: clamp(0.7rem, 0.554rem + 0.717vw, 0.9rem);
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #243fb4;
+    transition: 0.2s;
+}
+
+
+.div__task {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: 2.8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-remove__task {
+    background-color: var(--gray-4);
+    border: 1px solid transparent;
+    font-family: var(--font-family-ibm-plex-sans);
+    color: var(--gray-2);
+    font-size: 0.875rem;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.btn-remove__task:hover {
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+
+div p {
+    font-family: var(--font-family-ibm-plex-sans);
+    font-size: 1rem;
+    color: var(--gray-2);
+} 
